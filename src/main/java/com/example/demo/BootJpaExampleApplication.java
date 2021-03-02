@@ -77,13 +77,47 @@ UserRepository repository = 	context.getBean(UserRepository.class);
 //FindAll
 
 
-Iterable<User> user =    repository.findAll();
+//Iterable<User> user =    repository.findAll();
 
-user.forEach(user1-> System.out.println(user1));
+//user.forEach(user1-> System.out.println(user1));
 
  
 // dsadas
+
+//find by name
+//Iterable<User> user = repository.findByName("NANDU");
+
+//user.forEach(e->System.out.println(e));
  
+
+//find by name and city
+
+
+//Iterable<User> user =repository.findByNameAndCity("NANDU", "Mumbai");
+
+
+//user.forEach(e->System.out.println(e));
+
+
+//find all by JPQL QUERY
+
+//Iterable<User> user = repository.getAllUser();
+//user.forEach(e->System.out.println(e));
+
+//Iterable<User> user = repository.getUserByName("NANDU");
+//user.forEach(e->System.out.println(e));
+
+
+//Iterable<User> user = repository.getUserByNameAndCity("NANDU", "Mumbai");
+//user.forEach(e->System.out.println(e));
+
+
+
+//native query
+
+//Iterable<User> user = repository.getUsers();
+//user.forEach(e->System.out.println(e));
+
 
 }
 
